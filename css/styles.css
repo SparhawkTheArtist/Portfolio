@@ -1,0 +1,271 @@
+
+/* THIS IS FOR THE PORTFOLIO */
+
+
+
+
+/*
+styling guidelines
+
+main bg color:                      #222, var(--bg)
+secondary bg color:                 #034
+secondary color (type/details):     #0ac, var(--mainColor)
+tertiary color:                     #079
+
+lightmode:
+
+main bg color:                      #ccc, var(--bg)
+secondary bg color:                 #034
+secondary color (type/details):     #345, var(--mainColor)
+tertiary color:                     #079
+*/
+
+
+/* diagnostic outline */
+
+
+/*{
+  outline: 1px white dotted
+}*/
+
+/* THINGS FOR ALL PAGES */
+/* *{
+  transition: background .3s ease-in-out;
+} */
+.dark{
+  --mainColor: #0ac; /* var(--mainColor) */
+  --fontColor: #eee;
+  --bg: #111; /* var(--bg) */
+  --bg2: #334;
+  --secColor: #079;
+}
+
+
+/* UNIVERSALS */
+*{
+  box-sizing: border-box;
+}
+html{
+  --w: 750px; /* var(--w) */
+  --fontH: 'caudex', serif; /* var(--fontH) */
+  --fontS: 'josefin-sans', sans-serif; /* var(--fontS) */
+  --fontP: 'josefin-sans', sans-serif; 
+}
+p, main li{
+  font-family: var(--fontP);
+  font-weight: 200;
+  font-size: .9em;
+  max-width: 350px;
+  line-height: 1.5em;
+  color: var(--fontColor)
+}
+a{
+  text-decoration: none;
+  color: var(--fontColor)
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none ;
+  font-family: var(--fontP);
+}
+
+h1{
+  font-family: var(--fontH);
+  font-size: 1.4em;
+  letter-spacing: .8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+}
+h2, h3, h4, h5, h6{
+  font-family: var(--fontH);
+  font-size: 1.2em;
+}
+
+
+
+/* GENERAL CONTENT STYLING */
+
+body {
+  display: grid;
+  grid-template-columns: 200px 700px;
+  grid-gap: 2em;
+  grid-row-gap: 2em;
+  background: var(--bg);
+  color: white;
+  margin: 0 auto;
+  width: 1000px;
+  padding: 4em 0;
+}
+header,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* ASIDE STYLING */
+section.navig{
+  display: none;
+}
+#navToggle{
+  display: none;
+}
+#navToggle ~ label{
+  display: none;
+}
+aside {
+  grid-column: 1;
+/*  border-right: white 2px solid; */
+  box-shadow: inset 0px 0px 10px 5px #000;
+  background: #222;
+  padding: 2em;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: sticky;
+  top: 2em;
+   /* 35% for nav bar height */
+}
+aside li{
+  list-style: none;
+  line-height: 3.5em;
+  text-align: right;
+  text-transform: uppercase;
+  font-family: var(--fontH);
+  font-weight: 700;
+}
+aside a{
+  color: #888
+}
+.activePage a{ /* styling for active nav link */
+  color: #fff
+}
+aside img{ /* logo sizing */
+  width: 60px;
+}
+
+
+
+
+/* MAIN SECTION STYLING */
+
+main {
+  grid-column: 2;
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2em;
+  padding: 2em;
+  background: #222;
+  box-shadow: inset 0px 0px 10px 5px #000;
+}
+main h1{
+  grid-column: 1 / span 3;
+  text-align: center;
+  width: 100%;
+}
+.projectThumbs{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-column: span 2;
+  padding: 0;
+  gap: 1em;
+  justify-items: center;
+}
+.projectThumb{ /* for main page project thumbnails */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.projectThumb img{
+  width: 100%;
+  
+}
+.projectTitle{
+  opacity: 0;
+  background: #222;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  color: var(--fontColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+  text-align: center;
+}
+.projectTitle h4{
+  max-width: 85%;
+  padding: 25px;
+  background: #333;
+  box-shadow: inset 0px 0px 10px 5px #111;
+}
+.projectTitle:hover{
+  opacity: 1;
+}
+.projectImages { /* for project page content images */
+  grid-column: span 2;
+  max-width: 400px;
+}
+.projectImages img{
+  grid-column: span 2;
+  width: 100%
+}
+.projectImages .portrait{
+  max-width: 400px;
+}
+
+iframe{
+  padding: 50px;
+}
+
+
+
+.fotoImages{
+  grid-column: 1/ span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 1em
+}
+.fotoImages img{
+  max-width: 100%;
+}
+
+
+/* FOOTER STYLING */
+
+footer {
+  grid-column: 2;
+  height: 200px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2em;
+  padding-top: 4em;
+  background: #222;
+  box-shadow: inset 0px 0px 10px 5px #000;
+}
+footer p{
+  margin: .3em;
+}
+footer h3{
+  letter-spacing: .8em;
+  margin: .3em
+}
+.socialIcons img{
+  width: 25px;
+  padding: 15px;
+}
