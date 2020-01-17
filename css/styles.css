@@ -247,8 +247,10 @@ iframe{
 
 /* FOOTER STYLING */
 
-footer {
+#foot-placeholder {
   grid-column: 2;
+  }
+footer{
   height: 200px;
   flex-direction: column;
   text-align: center;
@@ -257,6 +259,7 @@ footer {
   padding-top: 4em;
   background: #222;
   box-shadow: inset 0px 0px 10px 5px #000;
+  grid-column: 2;
 }
 footer p{
   margin: .3em;
@@ -268,4 +271,7 @@ footer h3{
 .socialIcons img{
   width: 25px;
   padding: 15px;
+}
+.green{
+  background: green;
 }
