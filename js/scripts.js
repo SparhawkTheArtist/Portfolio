@@ -22,15 +22,34 @@ function lightmode (){
 
 //nav.html
 $(function(){
-    $("#nav-placeholder").append('<aside class="navMenu"><input id="navToggle" name="navToggle" type="checkbox"><label for="navToggle">Navigation</label><img src="/img/sparhawk.png" class="logo" alt="Sparhawk Logo"><ul><li class="nav1"><a href="/index.html">About</a></li><li class="nav2"><a href="/desn.html">Design</a></li><li><a href="/motn.html">Motion</a></li><li class="nav4"><a href="/ills.html">Illustration</a></li><li><a href="/foto.html">Photography</a></li></ul></aside>');  
-    if ($('#title').text() == ('Illustration')){
-        $('.nav4').addClass('activePage');
-    };
-    if ($('#title').text() == ('Design')){
+    $("#nav-placeholder").append(`<aside class="navMenu">
+            <input id="navToggle" name="navToggle" type="checkbox">
+            <label for="navToggle">Navigation</label>
+            <img src="/img/sparhawk.png" class="logo" alt="Sparhawk Logo">
+            <ul>
+                <li class="nav1"><a href="/index.html">About</a></li>
+                <li class="nav2"><a href="/desn.html">Design</a></li>
+                <li class="nav3"><a href="/motn.html">Motion</a></li>
+                <li class="nav4"><a href="/ills.html">Illustration</a></li>
+                <li class="nav5"><a href="/foto.html">Photography</a></li>
+            </ul>
+        </aside>`
+    );
+    if ($('#pageTitle').text() == ('About Me')){
+        $('.nav1').addClass('activePage');
+    }
+    else if ($('#pageTitle').text() == ('Design')){
         $('.nav2').addClass('activePage');
+    }
+    else if ($('#pageTitle').text() == ('Motion Design')){
+        $('.nav3').addClass('activePage');
+    }
+    else if ($('#pageTitle').text() == ('Illustration')){
+        $('.nav4').addClass('activePage');
+    }
+    else if ($('#pageTitle').text() == ('Photography') || ('Birds') || ('Nature') || ('Germany') || ('Landscapes') || ('Miscellaneous')){
+        $('.nav5').addClass('activePage');
     };
-            
-    
 });
 
 
