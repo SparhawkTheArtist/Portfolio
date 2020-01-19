@@ -65,8 +65,13 @@ h1{
 }
 aside ul{
   display: none;
+  background: #111;
+  box-shadow: 0px 0px 10px 5px #111;
   padding: 20px;
+  width: 100%;
   margin-top: 40px;
+  position: fixed;
+  top: 0;
 }
 p{
   max-width: 350px;
@@ -78,8 +83,7 @@ p{
 }
 aside{
   height: 100%;
-  position: sticky;
-  top: 0;
+  z-index: 9;
   align-items: center;
   width: 100vw;
   border: 0px;
@@ -120,6 +124,10 @@ iframe{
 }
 main{
   flex-direction: column-reverse;
+  margin-top: 50px;
+}
+.projectImages{
+  margin-top: 20px;
 }
 main h1{
   order: 3;
