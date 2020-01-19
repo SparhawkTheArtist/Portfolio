@@ -47,7 +47,7 @@ h1{
 #navToggle ~ label{
   display: block;
   height: 50px;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100vw;
   background: #111;
@@ -58,14 +58,15 @@ h1{
   font-family: var(--fontH);
   text-transform: uppercase;
   user-select: none;
-
+  box-shadow: 0px 0px 10px 5px #111;
 }
 #navToggle:checked ~ label ~ ul{
   display: block;
 }
 aside ul{
   display: none;
-  padding: 20px
+  padding: 20px;
+  margin-top: 40px;
 }
 p{
   max-width: 350px;
@@ -109,7 +110,7 @@ div.activePage{
 }
 
 
-.info p{
+.info p, .projectInfo p{
   width: 80vw;
 }
 iframe{
