@@ -24,7 +24,7 @@ function lightmode (){
 $(function(){
     $("#nav-placeholder").append(`<aside class="navMenu">
             <input id="navToggle" name="navToggle" type="checkbox">
-            <label for="navToggle">Navigation</label>
+            <label for="navToggle">Navigation &#9776;</label>
             <img src="/img/sparhawk.png" class="logo" alt="Sparhawk Logo">
             <ul>
                 <li class="nav1"><a href="/index.html">About</a></li>
@@ -56,7 +56,16 @@ $(function(){
 console.log($('#title').text());
 
 $(function(){
-    $("#foot-placeholder").load("footer.txt");
+    $("#foot-placeholder").append(`<footer>
+    <h3>COOPER SMITH</h3>
+    <p>&copy;Copyright 2015- <span class="year">2020</span></p>
+    <p><a href="/index.html">About</a> | <a href="/desn.html">Design</a> | <a href="/motn.html">Motion</a> | <a href="/ills.html">Illustration</a> | <a href="/foto.html">Photography</a></p>
+    <section class="socialIcons">
+        <a href="https://www.instagram.com/sparhawktheartist/" target="_blank"><img src="/img/icons/glyph-logo-white_May2016.png" alt="Instagram logo"></a>
+        <a href="https://github.com/SparhawkTheArtist" target="_blank"><img src="/img/icons/GitHub-Mark-Light-32px.png" alt="Github Logo"></a>
+        <a href="https://vimeo.com/user103744381" target="_blank"><img src="/img/icons/vimeo_icons-3/vimeo_icon_white.png" alt=""></a>
+    </section>
+  </footer>`);
 });
 
 
