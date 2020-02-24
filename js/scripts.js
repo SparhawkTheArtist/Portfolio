@@ -64,6 +64,7 @@ $(function(){
         <a href="https://www.instagram.com/sparhawktheartist/" target="_blank"><img src="/img/icons/glyph-logo-white_May2016.png" alt="Instagram logo"></a>
         <a href="https://github.com/SparhawkTheArtist" target="_blank"><img src="/img/icons/GitHub-Mark-Light-32px.png" alt="Github Logo"></a>
         <a href="https://vimeo.com/user103744381" target="_blank"><img src="/img/icons/vimeo_icons-3/vimeo_icon_white.png" alt=""></a>
+        <a href="https://SirSparhawk.redbubble.com" target="_blank"><img src="/img/icons/redbubble.png" alt=""></a>
     </section>
   </footer>`);
 });

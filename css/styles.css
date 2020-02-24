@@ -268,9 +268,14 @@ footer h3{
   letter-spacing: .8em;
   margin: .3em
 }
+.socialIcons{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
 .socialIcons img{
-  width: 25px;
-  padding: 15px;
+  width: 35px;
+  padding: 5px;
 }
 .green{
   background: green;
