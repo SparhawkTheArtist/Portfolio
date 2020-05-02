@@ -251,12 +251,12 @@ iframe{
   grid-column: 2;
   }
 footer{
-  height: 200px;
+  height: 250px;
   flex-direction: column;
   text-align: center;
   align-items: center;
   padding: 2em;
-  padding-top: 4em;
+  padding-top: 2em;
   background: #222;
   box-shadow: inset 0px 0px 10px 5px #000;
   grid-column: 2;

@@ -58,7 +58,8 @@ console.log($('#title').text());
 $(function(){
     $("#foot-placeholder").append(`<footer>
     <h3>COOPER SMITH</h3>
-    <p>&copy;Copyright 2015- <span class="year">2020</span></p>
+    <p>sparhawktheartist@gmail.com</p>
+    <p>&copy;Copyright 2015-<span class="year">2020</span></p>
     <p><a href="/index.html">About</a> | <a href="/desn.html">Design</a> | <a href="/motn.html">Motion</a> | <a href="/ills.html">Illustration</a> | <a href="/foto.html">Photography</a></p>
     <section class="socialIcons">
         <a href="https://www.instagram.com/sparhawktheartist/" target="_blank"><img src="/img/icons/glyph-logo-white_May2016.png" alt="Instagram logo"></a>
