@@ -1,0 +1,154 @@
+
+/* THIS IS FOR THE PORTFOLIO */
+
+
+
+
+/*
+styling guidelines
+
+main bg color:                      #222, var(--bg)
+secondary bg color:                 #034
+secondary color (type/details):     #0ac, var(--mainColor)
+tertiary color:                     #079
+
+lightmode:
+
+main bg color:                      #ccc, var(--bg)
+secondary bg color:                 #034
+secondary color (type/details):     #345, var(--mainColor)
+tertiary color:                     #079
+*/
+
+
+/* diagnostic outline */
+
+
+/**{
+  outline: 1px white dotted
+}*/
+
+/* THINGS FOR ALL PAGES */
+/* *{
+  transition: background .3s ease-in-out;
+} */
+.dark{
+  --mainColor: #0ac; /* var(--mainColor) */
+  --fontColor: #eee;
+  --bg: #111; /* var(--bg) */
+  --bg2: #334;
+  --secColor: #079;
+}
+
+
+/* UNIVERSALS */
+*{
+  box-sizing: border-box;
+}
+html{
+  --w: 750px; /* var(--w) */
+  --fontH: 'caudex', serif; /* var(--fontH) */
+  --fontS: 'josefin-sans', sans-serif; /* var(--fontS) */
+  --fontP: 'josefin-sans', sans-serif; 
+}
+p, main li{
+  font-family: var(--fontP);
+  font-weight: 200;
+  font-size: .9em;
+  max-width: 350px;
+  line-height: 1.5em;
+  color: var(--fontColor)
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none ;
+  font-family: var(--fontP);
+  text-align: left;
+}
+h2, h1{
+  margin: 0;
+}
+
+
+
+/* GENERAL CONTENT STYLING */
+
+body {
+  display: flex;
+  flex-direction: row;
+  background: var(--bg);
+  color: white;
+  margin: 0 auto;
+}
+
+header,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/* ASIDE STYLING */
+#navToggle ~ label{
+  display: none;
+}
+aside {
+  grid-column: 1;
+  display: grid;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  padding: 25px;
+  position: fixed;
+}
+aside ul{
+  padding-top: 25px;
+}
+aside li{
+  line-height: 2em;
+  background: #222;
+  margin: 15px;
+  padding: 5px 15px;
+}
+aside a{
+  color: #888
+}
+.activePage a{ /* styling for active nav link */
+  color: #fff
+}
+aside img{ /* logo sizing */
+  width: 60px;
+}
+
+
+
+
+/* MAIN SECTION STYLING */
+
+main {
+  margin-left: 270px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+#info{
+  display: flex;
+}
+
+
+#footer{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column; 
+}
+#footer p{
+  margin: 10px;
+}

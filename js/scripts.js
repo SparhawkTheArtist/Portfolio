@@ -57,7 +57,7 @@ console.log($('#title').text());
 
 $(function(){
     $("#foot-placeholder").append(`<footer>
-    <h3>COOPER SMITH</h3>
+    <h3>COOPER SMITH</h3>1
     <p>sparhawktheartist@gmail.com</p>
     <p>&copy;Copyright 2015-<span class="year">2020</span></p>
     <p><a href="/index.html">About</a> | <a href="/desn.html">Design</a> | <a href="/motn.html">Motion</a> | <a href="/ills.html">Illustration</a> | <a href="/foto.html">Photography</a></p>
