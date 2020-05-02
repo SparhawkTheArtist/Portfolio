@@ -36,7 +36,7 @@ tertiary color:                     #079
   --mainColor: #0ac; /* var(--mainColor) */
   --fontColor: #eee;
   --bg: #111; /* var(--bg) */
-  --bg2: #334;
+  --bg2: #222;
   --secColor: #079;
 }
 
@@ -51,13 +51,14 @@ html{
   --fontS: 'josefin-sans', sans-serif; /* var(--fontS) */
   --fontP: 'josefin-sans', sans-serif; 
 }
-p, main li{
+a, p, main li{
   font-family: var(--fontP);
   font-weight: 200;
   font-size: .9em;
   max-width: 350px;
   line-height: 1.5em;
-  color: var(--fontColor)
+  color: var(--fontColor);
+  text-decoration: none;
 }
 ul{
   margin: 0;
@@ -85,7 +86,7 @@ body {
 }
 
 header,
-main,
+
 footer {
   display: flex;
   justify-content: center;
@@ -99,31 +100,39 @@ footer {
   display: none;
 }
 aside {
-  grid-column: 1;
   display: grid;
+  justify-items: center;
   top: 0;
   left: 0;
   height: 100vh;
   padding: 25px;
   position: fixed;
+  background: var(--bg2);
 }
 aside ul{
-  padding-top: 25px;
-}
-aside li{
-  line-height: 2em;
-  background: #222;
-  margin: 15px;
-  padding: 5px 15px;
+  width: 200px;
 }
 aside a{
-  color: #888
+  display: inline-block;
+  line-height: 2em;
+  background: #046;
+  margin: 8px 0px;
+  padding: 5px 15px;
+  
 }
-.activePage a{ /* styling for active nav link */
-  color: #fff
+aside a:hover {
+  background: #555;
+  transition: ease-in .2s;
+}
+aside a:active{
+  background: #111;
+}
+.activePage{ /* styling for active nav link */
+  background: #063;
 }
 aside img{ /* logo sizing */
-  width: 60px;
+  width: 100px;
+  
 }
 
 
