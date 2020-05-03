@@ -44,12 +44,13 @@ tertiary color:                     #079
 /* UNIVERSALS */
 *{
   box-sizing: border-box;
+
 }
 html{
   --w: 750px; /* var(--w) */
-  --fontH: 'caudex', serif; /* var(--fontH) */
-  --fontS: 'josefin-sans', sans-serif; /* var(--fontS) */
-  --fontP: 'metropolisbold', sans-serif; 
+  --fontH: 'metropolisregular', sans-serif; /* var(--fontH) */
+  --fontS: 'metropolisregular', sans-serif; /* var(--fontS) */
+  --fontP: 'metropolisregular', sans-serif; 
 }
 a, p, main li{
   font-family: var(--fontP);
@@ -71,8 +72,9 @@ li {
 }
 h2, h1{
   margin: 0;
+  font-family: var(--fontH);
+  padding-bottom: 15px;
 }
-
 
 
 .black{
@@ -128,7 +130,6 @@ body {
 }
 
 header,
-
 footer {
   display: flex;
   justify-content: center;
@@ -142,8 +143,8 @@ footer {
   display: none;
 }
 aside {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 0;
   height: 100vh;
@@ -152,15 +153,16 @@ aside {
   background: var(--bg2);
 }
 aside ul{
-  width: 200px;
+  width: 232px;
 }
 aside a{
   display: inline-block;
-  line-height: 2em;
+  line-height: 1.5em;
   background: #046;
   margin: 8px 0px;
-  padding: 5px 15px;
+  padding: 5px 10px;
   width: 100%;
+  font-size: 1em;
 }
 aside a:hover {
   background: #555;
@@ -171,10 +173,28 @@ aside a:hover {
   background: #063;
 }
 aside img{ /* logo sizing */
-  width: 200px;
-  
+  height: 200px;
+  max-height: 20vh;
+  margin: 0 auto;
+  padding: 0px 0 25px;
+}
+.nav{
+  height: 100%;
 }
 
+
+
+#footer{
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-size: .8em;
+}
+#footer p{
+  margin: 0
+}
 
 
 
@@ -185,19 +205,32 @@ main {
   padding: 25px;
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
 }
-#info{
-  display: flex;
+
+
+
+.projectThumbs{
+  column-count: 3;
+  column-gap: 8px;
+}
+
+.projectThumbs img{
+  width: 100%;
+  height: auto;
+}
+.projectTitle{
+  display: none;
 }
 
 
-#footer{
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column; 
+@media (min-width: 1400px){
+  .projectThumbs{
+    column-count: 4;
+  }
 }
-#footer p{
-  margin: 10px;
+@media (max-width: 1000px){
+  .projectThumbs{
+    column-count: 2;
+  }
 }
