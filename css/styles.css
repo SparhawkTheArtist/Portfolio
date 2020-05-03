@@ -32,7 +32,7 @@ tertiary color:                     #079
 /* *{
   transition: background .3s ease-in-out;
 } */
-.dark{
+html{
   --mainColor: #0ac; /* var(--mainColor) */
   --fontColor: #eee;
   --bg: #111; /* var(--bg) */

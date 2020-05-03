@@ -1,23 +1,23 @@
 // lightmode
 //this object is irrelevant without jquery, display: none acceptable 
-$('#lightmode').css('display', 'block');
+// $('#lightmode').css('display', 'block');
 
-// lightmomde function
-// Cookies to keep lightmode/darkmode across pages: plugin courtesy of: http://code.iamkate.com/javascript/using-cookies/
-function lightmode (){
-    if ($('#checkbox').is(':checked')) {
-        Cookies.set('lightmode', 'on', {path:'/'});
-        $('.english').addClass('light'); //toggleClass does weird things with this, hence the add/remove classes
-        $('.english').removeClass('dark');
-        $('p').css({'font-weight': '700'});
-    }
-    else {
-        Cookies.set('lightmode', 'off', {path:'/'});
-        $('.english').addClass('dark');
-        $('.english').removeClass('light');
-        $('p').css({'font-weight': '100'});
-    }
-};
+// // lightmomde function
+// // Cookies to keep lightmode/darkmode across pages: plugin courtesy of: http://code.iamkate.com/javascript/using-cookies/
+// function lightmode (){
+//     if ($('#checkbox').is(':checked')) {
+//         Cookies.set('lightmode', 'on', {path:'/'});
+//         $('.english').addClass('light'); //toggleClass does weird things with this, hence the add/remove classes
+//         $('.english').removeClass('dark');
+//         $('p').css({'font-weight': '700'});
+//     }
+//     else {
+//         Cookies.set('lightmode', 'off', {path:'/'});
+//         $('.english').addClass('dark');
+//         $('.english').removeClass('light');
+//         $('p').css({'font-weight': '100'});
+//     }
+// };
 
 
 //nav.html
@@ -57,7 +57,7 @@ console.log($('#title').text());
 
 $(function(){
     $("#foot-placeholder").append(`<footer>
-    <h3>COOPER SMITH</h3>1
+    <h3>COOPER SMITH</h3>
     <p>sparhawktheartist@gmail.com</p>
     <p>&copy;Copyright 2015-<span class="year">2020</span></p>
     <p><a href="/index.html">About</a> | <a href="/desn.html">Design</a> | <a href="/motn.html">Motion</a> | <a href="/ills.html">Illustration</a> | <a href="/foto.html">Photography</a></p>
@@ -72,21 +72,21 @@ $(function(){
 
 
 // at page load, check for lightmode cookie
-if (Cookies.get('lightmode') == ('on')){
-    $('#checkbox').attr('checked', true);
-    lightmode();
-}
-else{
-    $('#checkbox').attr('checked', false);
-    lightmode();
-};
+// if (Cookies.get('lightmode') == ('on')){
+//     $('#checkbox').attr('checked', true);
+//     lightmode();
+// }
+// else{
+//     $('#checkbox').attr('checked', false);
+//     lightmode();
+// };
 
 
 // on click, trigger lightmode function
-$('#checkbox').on('click', lightmode);
-$('#checkbox').on('click', function(){
-    console.log(Cookies.get('lightmode'));
-});
+//$('#checkbox').on('click', lightmode);
+//$('#checkbox').on('click', function(){
+//    console.log(Cookies.get('lightmode'));
+//});
 
 
 
@@ -98,35 +98,48 @@ $('.year').text(year);
 
 
 // copy email on icon click
-new ClipboardJS('.btn');
+// new ClipboardJS('.btn');
 
-$('.btn').click(function(){
-    $('.copiedMessage').show();
-});
-$('.btn').mouseout(function(){
-    $('.copiedMessage').delay(2000).fadeOut();
-});
+// $('.btn').click(function(){
+//     $('.copiedMessage').show();
+// });
+// $('.btn').mouseout(function(){
+//     $('.copiedMessage').delay(2000).fadeOut();
+// });
 
 
 
 // lightgallery
-$('.lgGrid').lightGallery({
-    mode: 'lg-slide-skew-only-rev',
-    download: false,
-    thumbnail: false,
-    hideBarsDelay: 3000,
-    preload: 2,
-    autoplayControls: false
-  });
+// $('.lgGrid').lightGallery({
+//     mode: 'lg-slide-skew-only-rev',
+//     download: false,
+//     thumbnail: false,
+//     hideBarsDelay: 3000,
+//     preload: 2,
+//     autoplayControls: false
+//   });
 
   
 
 // burger menu animation
-$('#navCheck').click(function(){
-    $('.burgerA').toggleClass('menuAnim');
-    $('.burgerC').toggleClass('menuAnim');
-});
+// $('#navCheck').click(function(){
+//     $('.burgerA').toggleClass('menuAnim');
+//     $('.burgerC').toggleClass('menuAnim');
+// });
 
+
+
+
+// image hover code
+
+$('.thumb').mouseover(function(){
+    $(this).children(':last-child').stop(true).fadeTo('fast', 0.2);
+    $(this).children(':first-child').stop(true).css('opacity', '1');
+});
+$('.thumb').mouseout(function(){
+    $(this).children(':last-child').stop(true).fadeTo('slow', 1);
+    $(this).children(':first-child').stop(true).css('opacity', '0');
+});
 
 
 // // http://jquery.eisbehr.de/lazy/
