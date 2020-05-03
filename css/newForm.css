@@ -217,12 +217,21 @@ main {
 
 .projectThumbs img{
   width: 100%;
-  height: auto;
 }
-.projectTitle{
-  display: none;
+.projectThumbs a{
+  position: relative;
 }
-
+.projectTitle h4{
+ width: 100%;
+ height: 100%;
+ opacity: 0;
+ position: absolute;
+ top:0;
+ z-index: 2;
+}
+.projectThumbs a:hover >.projectTitle h4{
+  opacity: 1;
+}
 
 @media (min-width: 1400px){
   .projectThumbs{
