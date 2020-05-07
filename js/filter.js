@@ -83,22 +83,22 @@ if (document.querySelector('#pageTitle').textContent ==("Photography")){
     arrays = ['bird','germ','ldsc','mscf','natr','ylst'];
 
     for (i = 1; i < 23; i++){
-        bird['value'].push("/img/foto/bird/bird" + i + ".jpg")
+        bird['value'].push("/img/foto/BIRD/bird" + i + ".jpg")
     }
     for (i = 1; i < 25; i++){
-        germ['value'].push("/img/foto/germ/germ" + i + ".jpg")
+        germ['value'].push("/img/foto/GERM/germ" + i + ".jpg")
     }
     for (i = 1; i < 7; i++){
-        ldsc['value'].push("/img/foto/ldsc/ldsc" + i + ".jpg")
+        ldsc['value'].push("/img/foto/LDSC/ldsc" + i + ".jpg")
     }
     for (i = 1; i < 5; i++){
-        mscf['value'].push("/img/foto/mscf/mscf" + i + ".jpg")
+        mscf['value'].push("/img/foto/MSCF/mscf" + i + ".jpg")
     }
     for (i = 1; i < 68; i++){
-        natr['value'].push("/img/foto/natr/natr" + i + ".jpg")
+        natr['value'].push("/img/foto/NATR/natr" + i + ".jpg")
     }
     for (i = 1; i < 19; i++){
-        ylst['value'].push("/img/foto/ylst/ylst" + i + ".jpg")
+        ylst['value'].push("/img/foto/YLST/ylst" + i + ".jpg")
     }
 
 
