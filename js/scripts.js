@@ -1,92 +1,140 @@
-// lightmode
-//this object is irrelevant without jquery, display: none acceptable 
-// $('#lightmode').css('display', 'block');
-
-// // lightmomde function
-// // Cookies to keep lightmode/darkmode across pages: plugin courtesy of: http://code.iamkate.com/javascript/using-cookies/
-// function lightmode (){
-//     if ($('#checkbox').is(':checked')) {
-//         Cookies.set('lightmode', 'on', {path:'/'});
-//         $('.english').addClass('light'); //toggleClass does weird things with this, hence the add/remove classes
-//         $('.english').removeClass('dark');
-//         $('p').css({'font-weight': '700'});
-//     }
-//     else {
-//         Cookies.set('lightmode', 'off', {path:'/'});
-//         $('.english').addClass('dark');
-//         $('.english').removeClass('light');
-//         $('p').css({'font-weight': '100'});
-//     }
-// };
+mediaQuery = window.matchMedia("(max-width: 850px)");
 
 
-//nav.html
-$(function(){
-    $("#nav-placeholder").append(`<aside class="navMenu">
-            <input id="navToggle" name="navToggle" type="checkbox">
-            <label for="navToggle">Navigation &#9776;</label>
-            <img src="/img/sparhawk.png" class="logo" alt="Sparhawk Logo">
-            <ul>
-                <li class="nav1"><a href="/index.html">About</a></li>
-                <li class="nav2"><a href="/desn.html">Design</a></li>
-                <li class="nav3"><a href="/motn.html">Motion</a></li>
-                <li class="nav4"><a href="/ills.html">Illustration</a></li>
-                <li class="nav5"><a href="/foto.html">Photography</a></li>
-            </ul>
-        </aside>`
-    );
-    if ($('#pageTitle').text() == ('About Me')){
-        $('.nav1').addClass('activePage');
+navDisplay()
+
+
+
+// window.addEventListener('resize', ()=>{navDisplay()});
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector("#menu").style.top = "0";
+  } else {
+    document.querySelector("#menu").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+
+
+// back to top button fade in
+function backToTop(){
+    if (window.scrollY < 300){
+        document.querySelector('#toTop').style.bottom = '-100%';
+    }
+    else {
+        document.querySelector('#toTop').style.bottom = '0';
+    };
+};
+window.onload = backToTop
+
+
+
+// highlight active page in nav
+function activePage(){
+    if ($('#pageTitle').text() == ('Story')){
+        $('.nav5').addClass('activePage');
     }
     else if ($('#pageTitle').text() == ('Design')){
-        $('.nav2').addClass('activePage');
+        $('.nav1').addClass('activePage');
     }
     else if ($('#pageTitle').text() == ('Motion Design')){
         $('.nav3').addClass('activePage');
     }
     else if ($('#pageTitle').text() == ('Illustration')){
+        $('.nav2').addClass('activePage');
+    }
+    else if ($('#pageTitle').text() == ('Photography')){
         $('.nav4').addClass('activePage');
     }
-    else if ($('#pageTitle').text() == ('Photography') || ('Birds') || ('Nature') || ('Germany') || ('Landscapes') || ('Miscellaneous')){
-        $('.nav5').addClass('activePage');
+    else if ($('#pageTitle').text() == ('Get in Contact')){
+        $('.nav6').addClass('activePage');
     };
+}
+
+
+// display nav 
+function navDisplay() {
+    // display nav in mobile
+    if (mediaQuery['matches'] == true){
+        $(function(){
+            $("#nav-placeholder").empty();
+
+            $("#nav-placeholder").append(`<aside class="mobileNav">
+                
+                <nav>
+                    <ul>
+                    <li><a href="index.html" class="nav2 navButton2">Illustration</a></li>
+                    <li><a href="desn.html" class="nav1 navButton2">Design</a></li>
+                    <li><a href="foto.html" class="nav4 navButton2">Photography</a></li>
+                    <li><a href="motn.html" class="nav3 navButton2">Motion Design</a></li>
+                    <li><a href="stry.html" class="nav5 navButton2">Story</a></li>
+                    <li><a href="cntc.html" class="nav6 navButton2">Get in Contact</a></li>
+
+                    </ul>
+                </nav>
+
+                <footer>
+                <p>Cooper Smith</p>
+                <p>Copyright &copy; 2015-<span class="year">2020</span></p>
+                <p>sparhawktheartist@gmail.com</p>
+                <p>IG: @Sparhawktheartist</p>
+                </footer>
+            </aside>
+            <a href="#top" id="toTop">Back to top</a>`
+            );
+            activePage()
+        });
+        $(function(){
+            $('main').prepend('<a href="#" id="menu" class="navButton">Menu</a>')
+        });
+    };
+    window.addEventListener('scroll', backToTop);
+    $('.filters a').addClass('mobile')
+
+    
+
+// display nav in web
+if (mediaQuery['matches'] == false){
+    $(function(){
+        $("#nav-placeholder").empty();
+        $("#nav-placeholder").append(`<aside id="webNav"> 
+            <img src="/img/desn/spar/SPAR_logo_illustrated.png" alt="Sparhawk Logo">
+            <nav>
+            <ul>
+                <li><a href="index.html" class="nav2">Illustration</a></li>
+                <li><a href="desn.html" class="nav1">Design</a></li>
+                <li><a href="foto.html" class="nav4">Photography</a></li>
+                <li><a href="motn.html" class="nav3">Motion Design</a></li>
+                <li><a href="stry.html" class="nav5">Story</a></li>
+                <li><a href="cntc.html" class="nav6">Get in Contact</a></li>
+            </ul>
+            </nav>
+            <footer>
+            <p>Cooper Smith</p>
+            <p>Copyright &copy; 2015-<span class="year">2020</span></p>
+            <p>sparhawktheartist@gmail.com</p>
+            <p>IG: @Sparhawktheartist</p>
+            </footer>
+            </aside>`
+            );
+            // highlight current page link in nav
+            activePage()
+        });
+    };
+};
+
+
+
+// open menu on mobile nav
+$('main').on('click', '.navButton', function(){
+    $('.mobileNav').css('z-index','10');
+    $('.mobileNav').css('opacity','1');
+    console.log('green')
 });
-
-
-console.log($('#title').text());
-
-$(function(){
-    $("#foot-placeholder").append(`<footer>
-    <h3>COOPER SMITH</h3>
-    <p>sparhawktheartist@gmail.com</p>
-    <p>&copy;Copyright 2015-<span class="year">2020</span></p>
-    <p><a href="/index.html">About</a> | <a href="/desn.html">Design</a> | <a href="/motn.html">Motion</a> | <a href="/ills.html">Illustration</a> | <a href="/foto.html">Photography</a></p>
-    <section class="socialIcons">
-        <a href="https://www.instagram.com/sparhawktheartist/" target="_blank"><img src="/img/icons/glyph-logo-white_May2016.png" alt="Instagram logo"></a>
-        <a href="https://github.com/SparhawkTheArtist" target="_blank"><img src="/img/icons/GitHub-Mark-Light-32px.png" alt="Github Logo"></a>
-        <a href="https://vimeo.com/user103744381" target="_blank"><img src="/img/icons/vimeo_icons-3/vimeo_icon_white.png" alt=""></a>
-        <a href="https://SirSparhawk.redbubble.com" target="_blank"><img src="/img/icons/redbubble.png" alt=""></a>
-    </section>
-  </footer>`);
-});
-
-
-// at page load, check for lightmode cookie
-// if (Cookies.get('lightmode') == ('on')){
-//     $('#checkbox').attr('checked', true);
-//     lightmode();
-// }
-// else{
-//     $('#checkbox').attr('checked', false);
-//     lightmode();
-// };
-
-
-// on click, trigger lightmode function
-//$('#checkbox').on('click', lightmode);
-//$('#checkbox').on('click', function(){
-//    console.log(Cookies.get('lightmode'));
-//});
 
 
 
@@ -97,61 +145,21 @@ $('.year').text(year);
 
 
 
-// copy email on icon click
-// new ClipboardJS('.btn');
-
-// $('.btn').click(function(){
-//     $('.copiedMessage').show();
-// });
-// $('.btn').mouseout(function(){
-//     $('.copiedMessage').delay(2000).fadeOut();
-// });
-
-
-
-// lightgallery
-// $('.lgGrid').lightGallery({
-//     mode: 'lg-slide-skew-only-rev',
-//     download: false,
-//     thumbnail: false,
-//     hideBarsDelay: 3000,
-//     preload: 2,
-//     autoplayControls: false
-//   });
-
-  
-
-// burger menu animation
-// $('#navCheck').click(function(){
-//     $('.burgerA').toggleClass('menuAnim');
-//     $('.burgerC').toggleClass('menuAnim');
-// });
-
-
-
-
-// image hover code
-
-$('.thumb').mouseover(function(){
-    $(this).children(':last-child').stop(true).fadeTo('fast', 0.2);
-    $(this).children(':first-child').stop(true).css('opacity', '1');
-});
-$('.thumb').mouseout(function(){
-    $(this).children(':last-child').stop(true).fadeTo('slow', 1);
-    $(this).children(':first-child').stop(true).css('opacity', '0');
+// Light box
+lightbox.option({
+    'resizeDuration': 300,
+    'wrapAround': true,
+    'disableScrolling': true,
+    'imageFadeDuration':200,
+    'fadeDuration': 300,
+    'alwaysShowNavOnTouchDevices': true
 });
 
 
-// // http://jquery.eisbehr.de/lazy/
-// $('.lazy').Lazy({
-//     scrollDirection: 'vertical',
-//     effect: 'fadeIn',
-//     delay: 500,
-//     onError: function(element) {
-//         console.log('error loading ' + element.data('src'));
-//     },
-//     // onFinishedAll: function() {
-        
-//     //     // called once all elements was handled
-//     // }
-// });
+// copy email on click
+new ClipboardJS('.btn');
+if (document.querySelector('#pageTitle').textContent == "Get in Contact"){
+document.querySelector('.btn').addEventListener('click', () =>{
+    alert("'sparhawktheartist@gmail.com' copied to clipboard")
+})}
+
