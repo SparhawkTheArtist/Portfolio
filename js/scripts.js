@@ -7,29 +7,9 @@ navDisplay()
 
 // window.addEventListener('resize', ()=>{navDisplay()});
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector("#menu").style.top = "0";
-  } else {
-    document.querySelector("#menu").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
 
 
 
-// back to top button fade in
-function backToTop(){
-    if (window.scrollY < 300){
-        document.querySelector('#toTop').style.bottom = '-100%';
-    }
-    else {
-        document.querySelector('#toTop').style.bottom = '0';
-    };
-};
-window.onload = backToTop
 
 
 
@@ -91,6 +71,30 @@ function navDisplay() {
         $(function(){
             $('main').prepend('<a href="#" id="menu" class="navButton">Menu</a>')
         });
+
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.querySelector("#menu").style.top = "0";
+          } else {
+            document.querySelector("#menu").style.top = "-50px";
+          }
+          prevScrollpos = currentScrollPos;
+        }
+        
+
+        // back to top button fade in
+function backToTop(){
+    if (window.scrollY < 300){
+        document.querySelector('#toTop').style.bottom = '-100%';
+    }
+    else {
+        document.querySelector('#toTop').style.bottom = '0';
+    };
+};
+window.onload = backToTop
     };
     window.addEventListener('scroll', backToTop);
     $('.filters a').addClass('mobile')
