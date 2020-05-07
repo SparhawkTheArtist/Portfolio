@@ -102,7 +102,7 @@ if (mediaQuery['matches'] == false){
     $(function(){
         $("#nav-placeholder").empty();
         $("#nav-placeholder").append(`<aside id="webNav"> 
-            <img src="/img/desn/spar/SPAR_logo_illustrated.png" alt="Sparhawk Logo">
+            <img src="/img/desn/spar/Spar_logo_illustrated.png" alt="Sparhawk Logo">
             <nav>
             <ul>
                 <li><a href="index.html" class="nav2">Illustration</a></li>
