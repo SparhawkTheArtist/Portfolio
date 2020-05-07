@@ -1,19 +1,21 @@
-
+// populate gallery and highlight current page
 function filter(rndm){
-    for (i=0;i<arrays.length;i++){
-        // console.log(arrays[i])
-        document.querySelector("#"+arrays[i]).classList.remove('currentProject')
-    }
+    
+    // clear gallery tag to make way for new gallery content
     $('#gallery').empty();
     rval = rndm['value']
-    // console.log(rval)
     rname = rndm['name']
-    // console.log("#"+rname)
-
+    
+    // remove styling for previous project
+    for (i=0;i<arrays.length;i++){
+        document.querySelector("#"+arrays[i]).classList.remove('currentProject')
+    }
+    // add styling for current project
     document.querySelector("#"+rname).classList.add('currentProject')
+    // append images to gallery based on page and project
     for ( let i =0; i < rval.length; i++){
-        newImg = ('<a href="' + rval[i] +'" data-lightbox="gallery" data-title="" class="thumb item"' + i + '"><img src="' + rval[i] + '" alt="" class="nought"></a>');
-        $("#gallery").append(newImg)
+        newImg = ('<a href="' + rval[i] +'" data-lightbox="gallery" data-title="" class="thumb item"' + i + '"><img src="' + rval[i] + '"></a>');
+        $("#gallery").hide().append(newImg).delay(500).fadeIn(1500);
     };
 };
 
