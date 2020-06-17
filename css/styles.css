@@ -1,20 +1,3 @@
-
-/* THIS IS FOR THE PORTFOLIO */
-
-
-
-
-/*
-styling guidelines
-
-main bg color:                      #222, var(--bg)
-secondary bg color:                 #034
-secondary color (type/details):     #0ac, var(--mainColor)
-tertiary color:                     #079
-
-*/
-
-
 /* diagnostic outline */
 
 /**{
@@ -28,9 +11,42 @@ tertiary color:                     #079
   box-sizing: border-box;
 }
 
+@font-face{
+  font-family: 'metropolis'; 
+  /* font-weight: 100; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-Thin.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-Thin.woff') format('woff)');
+  /* font-weight: 200; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-ExtraLight.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-ExtraLight.woff') format('woff)');
+  /* font-weight: 300; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-Light.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-Light.woff') format('woff)');
+  /* font-weight: 400; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-Regular.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-Regular.woff') format('woff)');
+  /* font-weight: 500; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-Medium.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-Medium.woff') format('woff)');
+  /* font-weight: 600; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-SemiBold.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-SemiBold.woff') format('woff)');
+  /* font-weight: 700; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-Bold.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-Bold.woff') format('woff)');
+  /* font-weight: 800; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-ExtraBold.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-ExtraBold.woff') format('woff)');
+  /* font-weight: 900; */
+  src: url('/fonts/metropolisWOFF2/Metropolis-Black.woff2') format('woff2)');
+  src: url('/fonts/metropolisWOFF/Metropolis-Black.woff') format('woff)');
+}
+
+
 html{
-  --fontH: 'metropolissemibold', sans-serif;
-  --fontP: 'metropolisregular', sans-serif; 
+  font-family: 'metropolis', serif;
+  --fontB: 700;
+  --fontM: 600;
   --fc: #333;
   --fc1: #aaa;
   --fc2: #fff;
@@ -41,9 +57,14 @@ html{
   overflow-y: scroll;  /* make webpage not reposition with scrollbar */
 }
 
+em{
+  font-style: italic;
+}
+strong{
+  font-weight: var(--fontB);
+}
+
 a, p, main li{
-  font-family: var(--fontP);
-  font-weight: 500;
   font-size: 1em;
   max-width: 450px;
   line-height: 1.5em;
@@ -56,12 +77,10 @@ ul{
 }
 li {
   list-style: none ;
-  font-family: var(--fontP);
   text-align: left;
 }
 h2, h1{
   margin: 0;
-  font-family: var(--fontH);
   padding-bottom: 15px;
   line-height: 1.5em;
 }
@@ -71,6 +90,7 @@ body {
   background: var(--bg1);
   color: var(--fc);
   margin: 0 auto;
+  font-weight: 500;
 }
 
 
@@ -143,14 +163,14 @@ main{
 }
 .filters{
   width: 100%;
-  max-width: 1000px;
+  max-width: 1400px;
   margin: 25px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 .filters a{
-  font-family: var(--fontP);
   font-size: 1.3em;
+  margin: 0 30px;
   color: var(--fc1);
   text-align: center;
   -webkit-user-select: none;  /* Chrome all / Safari all */
@@ -176,119 +196,16 @@ a.currentProject{
 .info{
   margin-bottom: 25px;
 }
-.info p{
-  font-family: metropolisregular, sans-serif;
-}
 .info h4{
-  font-family: metropolissemibold, sans-serif;
-  font-weight: 700;
+  font-weight: var(--fontB);
 }
 .contact a{
   color: var(--ac2);
-  font-family: metropolismedium, sans-serif;
-}
-#gallery{
-  column-gap: 10px;
-  width: 100%;
-}
-#gallery a:first-child{
-  margin:0;
-}
-.thumb img{
-  width: 100%;
-}
-.thumb h2{
-  max-width: 80%;
-}
-.thumb{
-  position: relative;
-  background: black;
-  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-  page-break-inside: avoid; /* Firefox */
-  break-inside: avoid;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px 0px;
-}
-.title{
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 1s;
-  color: white;
-  font-family: sans-serif;
+  font-weight: var(--fontB);
 }
 
 
 
-
-/* Media Queries */
-
-@media (min-width: 1801px){
-  #gallery{
-    column-count: 5;
-  }
-}
-@media (max-width: 1800px){
-  #gallery{
-    column-count: 4;
-  }
-}
-
-@media (max-width: 1400px){
-  #gallery{
-    column-count: 3;
-  }
-  .filters a{
-    font-size: 1.1em;
-    font-family: metropolismedium, sans-serif;
-  }
-}
-@media (max-width: 1000px){
-  #gallery{
-    column-count: 2;
-  }
-  .filters a{
-    font-size: .9em;
-    font-family: metropolissemibold, sans-serif;
-  }
-  main{
-    margin-left: 190px;
-  }
-  #webNav ul{
-    width: 150px;
-  }
-  #webNav a{
-    font-size: .8em;
-  }
-  footer p{
-    font-size: .6em;
-  }
-}
-
-@media (max-width: 850px){
-  main{
-    margin: 35px 0px;
-    width: 100vw;
-  }
-  #gallery{
-    width: 100%;
-  }
-}
-@media (max-width: 650px){
-  .filters{
-    display: flex;
-    flex-direction: column;
-  }
-  .filters a{
-    line-height: 2.5em;
-  }
-  #gallery{
-    column-count: 1;
-  }
-}
 
 
 
@@ -309,22 +226,25 @@ a.currentProject{
   transition: opacity .5s ease-in-out;
   padding-top: 50px;
   line-height: 3em;
+  overflow-y: hidden;
+}
+.showMenu{
+  opacity: 1;
+  z-index: 10;
+}
+.fixed{
+  position: fixed;
 }
 .mobileNav li{
   text-align: center;
+  margin: 0;
+  line-height: 2.5em;
 }
 .mobileNav a{
-  padding: 10px;
+  padding: 5px 10px;
+  border-radius: 7px;
 }
-@media (min-width: 500px){
-  .mobileNav ul{
-    display: flex;
-    flex-direction: row;
-  }
-  .mobileNav li{
-    margin: 15px;
-  }
-}
+
 #toTop{
   display: none;
   position: fixed;
@@ -381,4 +301,199 @@ a.currentProject{
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+
+
+
+/* gallery work */
+.navContainer{
+  height: 100px;
+  padding: 0px 10px;
+}
+.projectNav img{
+  max-height: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.projectNav{
+  width: 60vw;
+  max-width: 700px;
+}
+.project img{
+  width: 30vw;
+}
+.project{
+  max-width: 30vw;
+  margin: 35px 0px;
+  /* height: 100%; */
+}
+.project img{
+  border-radius: 10px;
+}
+.project .slack-list, .project .draggable{
+  height: 100%;
+}
+.gallery{
+  width: 600px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+
+
+
+.body404{
+  background-image: url('/img/illstr_lndscp-desert-404.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  margin: 0;
+  position: relative;
+  top: -30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.body404 #webNav{
+  background: none;
+}
+.body404 h1, .body404 a, .body404 h4{
+  color: white;
+}
+.body404 h1{
+  margin-bottom: 30px;;
+}
+.main404{
+  margin: 0;
+  padding: 50px 0 0;
+}
+.body404 ul{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.body404 li{
+  line-height: 2.2em;
+}
+.footer404 p{
+  color: white;
+}
+
+
+
+/* Media Queries */
+
+@media (min-width: 1801px){
+
+}
+@media (max-width: 1800px){
+
+}
+
+@media (max-width: 1400px){
+
+  .filters a{
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 20px;
+  }
+}
+@media (max-width: 1200px){
+  .slick-dots li{
+    margin: 0;
+  }
+}
+@media (max-width: 1000px){
+  .filters a{
+    font-size: .9em;
+    font-weight: 600;
+    margin: 0 15px;
+  }
+  main{
+    margin-left: 190px;
+  }
+  #webNav ul{
+    width: 150px;
+  }
+  #webNav a{
+    font-size: 1em;
+  }
+  footer p{
+    font-size: .6em;
+  }
+  
+}
+
+
+/* mobile */
+@media (max-width: 850px){
+  main{
+    margin: 35px 0px;
+    width: 100vw;
+  }
+  .filters{
+    width: 90vw;
+    margin: 0;
+    padding: 30px;
+  }
+  .gallery{
+    width: 90vw;
+    padding: 0;
+    margin: 0;
+  }
+  .project{
+    max-width: none;
+    width: 90vw;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .project img{
+    width: 50vw;
+    margin: 0;
+  }
+}
+@media (max-width: 650px){
+  .filters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filters a{
+    line-height: 2.5em;
+    font-size: 1em;
+  }
+  .gallery{
+    margin-bottom: 15px;
+    padding: 0;;
+  }
+  main{
+    margin-bottom: 0;
+  }
+  .project{
+    margin: 0;
+    padding: 0;
+  }
+  .project a{
+    width: 450px;
+  }
+  .project img{
+    width: 450px;
+    margin: 0 auto;
+  }
+  .main404 h1{
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px){
+  .project a, .project img{
+    width: 90vw;
+  }
 }

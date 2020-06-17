@@ -4,13 +4,7 @@ mediaQuery = window.matchMedia("(max-width: 850px)");
 navDisplay()
 
 
-
 // window.addEventListener('resize', ()=>{navDisplay()});
-
-
-
-
-
 
 
 // highlight active page in nav
@@ -61,7 +55,7 @@ function navDisplay() {
                 <p>Cooper Smith</p>
                 <p>Copyright &copy; 2015-<span class="year">2020</span></p>
                 <p>sparhawktheartist@gmail.com</p>
-                <p>IG: @Sparhawktheartist</p>
+                <p>IG @Sparhawktheartist</p>
                 </footer>
             </aside>
             <a href="#top" id="toTop">Back to top</a>`
@@ -95,9 +89,9 @@ function backToTop(){
     };
 };
 window.onload = backToTop
-    };
-    window.addEventListener('scroll', backToTop);
-    $('.filters a').addClass('mobile')
+window.addEventListener('scroll', backToTop);
+$('.filters a').addClass('mobile')
+};
 
     
 
@@ -106,7 +100,7 @@ if (mediaQuery['matches'] == false){
     $(function(){
         $("#nav-placeholder").empty();
         $("#nav-placeholder").append(`<aside id="webNav"> 
-            <img src="/img/desn/spar/Spar_logo_illustrated.png" alt="Sparhawk Logo">
+            <img src="/img/desn/spar/Spar_logo_black.png" alt="Sparhawk Logo">
             <nav>
             <ul>
                 <li><a href="index.html" class="nav2">Illustration</a></li>
@@ -121,7 +115,7 @@ if (mediaQuery['matches'] == false){
             <p>Cooper Smith</p>
             <p>Copyright &copy; 2015-<span class="year">2020</span></p>
             <p>sparhawktheartist@gmail.com</p>
-            <p>IG: @Sparhawktheartist</p>
+            <p>IG @Sparhawktheartist</p>
             </footer>
             </aside>`
             );
@@ -135,8 +129,8 @@ if (mediaQuery['matches'] == false){
 
 // open menu on mobile nav
 $('main').on('click', '.navButton', function(){
-    $('.mobileNav').css('z-index','10');
-    $('.mobileNav').css('opacity','1');
+    $('.mobileNav').toggleClass('showMenu');
+    $('body').toggleClass('fixed')
     console.log('green')
 });
 
@@ -151,12 +145,7 @@ $('.year').text(year);
 
 // Light box
 lightbox.option({
-    'resizeDuration': 300,
-    'wrapAround': true,
     'disableScrolling': true,
-    'imageFadeDuration':200,
-    'fadeDuration': 300,
-    'alwaysShowNavOnTouchDevices': true
 });
 
 

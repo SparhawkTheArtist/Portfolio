@@ -19,33 +19,35 @@
 
   <!-- Normalize CSS via CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <!-- adobe typekit fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/yjd4ehy.css">
-    <link rel="stylesheet" href="https://fontlibrary.org/face/metropolis" type="text/css"/> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+sans|Caudex|Yeseva+One&display=swap"> 
+  <!-- various -->
     <link rel="stylesheet" href="/css/lightbox.css">
-  <!-- My Awesome Styling -->
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+  <!-- My Styling -->
     <link rel="stylesheet" href="/css/styles.css">
   </head>
 
   <body>
     <section id="nav-placeholder"></section>
     <main>
+      <!-- This is for the nav menu on mobile -->
+      <div class="menu"></div>
+
       <h1 id="pageTitle">Design</h1>
+      
+      <!-- secondary nav within page -->
       <section class="filters">
-        <a href="#" id="spar">Sparhawk Creative (Old)</a>
-        <a href="#" id="rjse">Ruthe J Smith Copyediting (Old)</a>
-        <a href="#" id="gdte">Green Dragon Tea</a>
-        <a href="#" id="sptn">Spartan Logo</a>
-        <a href="#" id="nemn">Nemean Manes</a>
-        <a href="#" id="iccf">Indian Creek Community Forest</a>
-
-
+        <a href="#" id="clab" class="projectTitle">CoLab Brand</a>
+        <a href="#" id="mnzr" class="projectTitle">Manzanar Photobook</a>
+        <a href="#" id="pzza" class="projectTitle">Bennedito's Menu</a>
+        <a href="#" id="nemn" class="projectTitle">Nemean Manes</a>
+        <a href="#" id="sptn" class="projectTitle">Spartan Brand</a>
       </section>
-      <section class="info"></section>
-      <section id="gallery">
-        
-      </section>
+      
+      <!-- place where galleries and gallery nav are appended -->
+
+      <section class="gallery"></section>
+
     </main>
 
 
@@ -54,6 +56,7 @@
     <!-- Plugins(s) -->
     <script src="/js/clipboard.min.js"></script>
     <script src="/js/lightbox.js"></script><!-- credit: lokesh Dhakar  https://lokeshdhakar.com/projects/lightbox2/ -->
+    <script src="/js/slick.js"></script>
     <!-- My Scripts -->
     <script src="/js/filter.js"></script>
     <script src="/js/scripts.js"></script>

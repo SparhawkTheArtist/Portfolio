@@ -1,0 +1,7 @@
+body{
+  position: relative;
+  left: -200px;
+}
+main{
+  margin-left: 200px;
+}

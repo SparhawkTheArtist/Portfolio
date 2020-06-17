@@ -18,46 +18,51 @@
     <meta name="theme-color" content="#079">
 
   <!-- Normalize CSS via CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <!-- adobe typekit fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/yjd4ehy.css">
-    <link rel="stylesheet" href="https://fontlibrary.org/face/metropolis" type="text/css"/> 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+sans|Caudex|Yeseva+One&display=swap"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- various -->
     <link rel="stylesheet" href="/css/lightbox.css">
-
-  <!-- My Awesome Styling -->
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+  <!-- My Styling -->
     <link rel="stylesheet" href="/css/styles.css">
   </head>
 
   <body>
+    <!-- This is where the navigation and footer are appended -->
     <section id="nav-placeholder"></section>
+
     <main>
+      <!-- This is for the nav menu on mobile -->
+      <div class="menu"></div>
+
       <h1 id="pageTitle">Photography</h1>
+      
+      <!-- secondary nav within page -->
       <section class="filters">
-        <a href="#" id="bird">Birds</a>
-        <a href="#" id="germ">Germany</a>
-        <a href="#" id="ldsc">Landscapes</a>
-        <a href="#" id="natr">Nature</a>
-        <a href="#" id="ylst">Yellowstone</a>
-        <a href="#" id="mscf">Miscellaneous</a>
+        <a href="#" id="bird" class="projectTitle">Birds</a>
+        <a href="#" id="germ" class="projectTitle">Germany</a>
+        <a href="#" id="natr" class="projectTitle">Nature</a>
+        <a href="#" id="ldsc" class="projectTitle">Landscapes</a>
       </section>
+      
+      <!-- place where galleries and gallery nav are appended -->
 
+      <section class="gallery"></section>
 
-      <section id="gallery">
-
-      </section>
     </main>
 
 
     <!-- jQuery Library via CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Plugins(s) -->
     <script src="/js/clipboard.min.js"></script>
     <script src="/js/lightbox.js"></script><!-- credit: lokesh Dhakar  https://lokeshdhakar.com/projects/lightbox2/-->
+    <script src="/js/slick.js"></script>
     <!-- My Scripts -->
     <script src="/js/filter.js"></script>
     <script src="/js/scripts.js"></script>
   </body>
 </html>
+
 
 
