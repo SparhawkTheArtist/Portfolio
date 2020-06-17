@@ -127,26 +127,26 @@ function glryIlls(rndm){
         rval = 'ntlp'
         $('.gallery').append(`
         <section id="`+rval+`Project" class="projectNav">
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp1.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp2.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp3.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp4.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp5.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp6.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp8.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp9.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp10.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp1_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp2_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp3_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp4_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp5_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp6_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp8_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp9_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/ntlp7_thumb.jpg" alt=""></div>
         </section>
         <section class=" bsry project">
-        <a href="/img/ills/`+rval+`/ntlp1.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/ntlp1.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp2.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/ills/`+rval+`/ntlp2.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp3.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/ills/`+rval+`/ntlp3.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp4.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/ills/`+rval+`/ntlp4.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp5.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/ills/`+rval+`/ntlp5.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp6.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/ills/`+rval+`/ntlp6.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp8.jpg" data-lightbox="`+rval+`7" data-title=""><img src="/img/ills/`+rval+`/ntlp8.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp9.jpg" data-lightbox="`+rval+`8" data-title=""><img src="/img/ills/`+rval+`/ntlp9.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/ntlp10.jpg" data-lightbox="`+rval+`9" data-title=""><img src="/img/ills/`+rval+`/ntlp10.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp1_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/ntlp1_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp2_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/ills/`+rval+`/ntlp2_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp3_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/ills/`+rval+`/ntlp3_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp4_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/ills/`+rval+`/ntlp4_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp5_full.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/ills/`+rval+`/ntlp5_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp6_full.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/ills/`+rval+`/ntlp6_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp8_full.jpg" data-lightbox="`+rval+`7" data-title=""><img src="/img/ills/`+rval+`/ntlp8_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp9_full.jpg" data-lightbox="`+rval+`8" data-title=""><img src="/img/ills/`+rval+`/ntlp9_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/ntlp7_full.jpg" data-lightbox="`+rval+`9" data-title=""><img src="/img/ills/`+rval+`/ntlp7_full.jpg" alt=""></a>
         </section>
         <p><em>*Not affiliated in any way with the National Parks</em></p>
         `
@@ -156,32 +156,32 @@ function glryIlls(rndm){
         rval = 'mhgn'
         $('.gallery').append(`
         <section id="`+rval+`Project" class="projectNav">
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_balrog_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_cobra_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_dragon_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_fox_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_frog_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_hawk_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_horse_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_owl_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_raven_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_shark_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_skull_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_trex_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_4_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_7_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_8_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_11_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_12_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_13_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_17_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_19_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_23_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_24_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_27_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/MHGN_28_thumb.jpg" alt=""></div>
         </section>
         <section class=" bsry project">
-        <a href="/img/ills/`+rval+`/MHGN_balrog_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/MHGN_balrog_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_cobra_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/ills/`+rval+`/MHGN_cobra_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_dragon_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/ills/`+rval+`/MHGN_dragon_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_fox_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/ills/`+rval+`/MHGN_fox_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_frog_full.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/ills/`+rval+`/MHGN_frog_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_hawk_full.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/ills/`+rval+`/MHGN_hawk_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_horse_full.jpg" data-lightbox="`+rval+`7" data-title=""><img src="/img/ills/`+rval+`/MHGN_horse_full.jpg" alt=""></a>    
-        <a href="/img/ills/`+rval+`/MHGN_owl_full.jpg" data-lightbox="`+rval+`8" data-title=""><img src="/img/ills/`+rval+`/MHGN_owl_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_raven_full.jpg" data-lightbox="`+rval+`9" data-title=""><img src="/img/ills/`+rval+`/MHGN_raven_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_shark_full.jpg" data-lightbox="`+rval+`10" data-title=""><img src="/img/ills/`+rval+`/MHGN_shark_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_skull_full.jpg" data-lightbox="`+rval+`11" data-title=""><img src="/img/ills/`+rval+`/MHGN_skull_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/MHGN_trex_full.jpg" data-lightbox="`+rval+`12" data-title=""><img src="/img/ills/`+rval+`/MHGN_trex_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_4_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/MHGN_4_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_7_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/ills/`+rval+`/MHGN_7_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_8_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/ills/`+rval+`/MHGN_8_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_11_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/ills/`+rval+`/MHGN_11_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_12_full.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/ills/`+rval+`/MHGN_12_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_13_full.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/ills/`+rval+`/MHGN_13_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_17_full.jpg" data-lightbox="`+rval+`7" data-title=""><img src="/img/ills/`+rval+`/MHGN_17_full.jpg" alt=""></a>    
+        <a href="/img/ills/`+rval+`/MHGN_19_full.jpg" data-lightbox="`+rval+`8" data-title=""><img src="/img/ills/`+rval+`/MHGN_19_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_23_full.jpg" data-lightbox="`+rval+`9" data-title=""><img src="/img/ills/`+rval+`/MHGN_23_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_24_full.jpg" data-lightbox="`+rval+`10" data-title=""><img src="/img/ills/`+rval+`/MHGN_24_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_27_full.jpg" data-lightbox="`+rval+`11" data-title=""><img src="/img/ills/`+rval+`/MHGN_27_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/MHGN_28_full.jpg" data-lightbox="`+rval+`12" data-title=""><img src="/img/ills/`+rval+`/MHGN_28_full.jpg" alt=""></a>
         </section>`
         );
     }
@@ -253,20 +253,20 @@ function glryDesn(rndm){
         <p>This project required extensive research, site visits, and interviews/surveys with students, professors, and community members in order to put together a plan for how the CoLab would best be used.</p>
         </section>
         <section id="`+rval+`Project" class="projectNav">
-        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_logo_01.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_logo_02.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_01.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_02.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_styleGuide.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_diagram.png" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_logo_01_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_logo_02_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_01_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_02_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_styleGuide_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/CLAB_diagram_thumb.jpg" alt=""></div>
         </section>
         <section class=" bsry project">
-        <a href="/img/desn/`+rval+`/CLAB_mockup_logo_01.png" data-lightbox="`+rval+`2" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_logo_01.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/CLAB_mockup_logo_02.png" data-lightbox="`+rval+`3" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_logo_02.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/CLAB_mockup_lanyard_01.png" data-lightbox="`+rval+`4" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_01.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/CLAB_mockup_lanyard_02.png" data-lightbox="`+rval+`5" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_02.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/CLAB_styleGuide.png" data-lightbox="`+rval+`6" data-title=""><img src="/img/desn/`+rval+`/CLAB_styleGuide.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/CLAB_diagram.png" data-lightbox="`+rval+`1" data-title=""><img src="/img/desn/`+rval+`/CLAB_diagram.png" alt=""></a>
+        <a href="/img/desn/`+rval+`/CLAB_mockup_logo_01_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_logo_01_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/CLAB_mockup_logo_02_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_logo_02_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/CLAB_mockup_lanyard_01_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_01_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/CLAB_mockup_lanyard_02_full.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/desn/`+rval+`/CLAB_mockup_lanyard_02_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/CLAB_styleGuide_full.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/desn/`+rval+`/CLAB_styleGuide_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/CLAB_diagram_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/desn/`+rval+`/CLAB_diagram_full.jpg" alt=""></a>
         </section>
         `
         );
@@ -279,15 +279,15 @@ function glryDesn(rndm){
         </section>
         <section id="`+rval+`Project" class="projectNav">
         <div class="navContainer"><img src="/img/desn/`+rval+`/MNZR_mockup_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/MNZR_page06.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/MNZR_page10.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/MNZR_page18.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/MNZR_page06_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/MNZR_page10_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/MNZR_page18_thumb.jpg" alt=""></div>
         </section>
         <section class=" bsry project">
         <a href="/img/desn/`+rval+`/MNZR_mockup_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/desn/`+rval+`/MNZR_mockup_full.jpg" alt=""></a>
-        <a href="/img/desn/`+rval+`/MNZR_page06.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/desn/`+rval+`/MNZR_page06.jpg" alt=""></a>
-        <a href="/img/desn/`+rval+`/MNZR_page10.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/desn/`+rval+`/MNZR_page10.jpg" alt=""></a>
-        <a href="/img/desn/`+rval+`/MNZR_page18.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/desn/`+rval+`/MNZR_page18.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/MNZR_page06_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/desn/`+rval+`/MNZR_page06_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/MNZR_page10_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/desn/`+rval+`/MNZR_page10_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/MNZR_page18_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/desn/`+rval+`/MNZR_page18_full.jpg" alt=""></a>
         </section>
         `
         );
@@ -299,7 +299,7 @@ function glryDesn(rndm){
         <p>A typography class proect to redesign the menu's for Bennedito's Brewpub in Spokane, WA. The main challenge of the task was to fit to much content into a specified area, while maintaing the Brewpub's aesthetic.</p>
         </section>
         <section id="`+rval+`Project" class="projectNav">
-        <div class="navContainer"><img src="/img/desn/`+rval+`/PZZA_mockup_menu.png" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/PZZA_mockup_menu_thumb.jpg" alt=""></div>
         <div class="navContainer"><img src="/img/desn/`+rval+`/PZZA_pizza_01_thumb.jpg" alt=""></div>
         <div class="navContainer"><img src="/img/desn/`+rval+`/PZZA_pizza_02_thumb.jpg" alt=""></div>
         <div class="navContainer"><img src="/img/desn/`+rval+`/PZZA_brew_01_thumb.jpg" alt=""></div>
@@ -307,7 +307,7 @@ function glryDesn(rndm){
         <div class="navContainer"><img src="/img/desn/`+rval+`/PZZA_beer_thumb.jpg" alt=""></div>
         </section>
         <section class=" bsry project">
-        <a href="/img/desn/`+rval+`/PZZA_mockup_menu.png" data-lightbox="`+rval+`1" data-title=""><img src="/img/desn/`+rval+`/PZZA_mockup_menu.png" alt=""></a>
+        <a href="/img/desn/`+rval+`/PZZA_mockup_menu_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/desn/`+rval+`/PZZA_mockup_menu_full.jpg" alt=""></a>
         <a href="/img/desn/`+rval+`/PZZA_pizza_01_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/desn/`+rval+`/PZZA_pizza_01_full.jpg" alt=""></a>
         <a href="/img/desn/`+rval+`/PZZA_pizza_02_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/desn/`+rval+`/PZZA_pizza_02_full.jpg" alt=""></a>
         <a href="/img/desn/`+rval+`/PZZA_brew_01_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/desn/`+rval+`/PZZA_brew_01_full.jpg" alt=""></a>
@@ -324,20 +324,20 @@ function glryDesn(rndm){
         <p>Nemean Manes is a class project, wherein I was tasked with design a product that solved a problem, and to create the branding for the product as well.</p>
         </section>
         <section id="`+rval+`Project" class="projectNav">
-        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_concept.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_logo.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_styleGuide.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_mockup_BC_thumb.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_mockup_postcard_thumb.png" alt=""></div>
-        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_production.png" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_concept_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_logo_thumb.jpg"_thumb alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_styleGuide_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_mockup_BC_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_mockup_postcard_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/desn/`+rval+`/NEMN_production_thumb.jpg" alt=""></div>
         </section>
         <section class=" `+rval+` project">
-        <a href="/img/desn/`+rval+`/NEMN_concept.png" data-lightbox="`+rval+`1" data-title=""><img src="/img/desn/`+rval+`/NEMN_concept.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/NEMN_logo.png" data-lightbox="`+rval+`2" data-title=""><img src="/img/desn/`+rval+`/NEMN_logo.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/NEMN_styleGuide.png" data-lightbox="`+rval+`6" data-title=""><img src="/img/desn/`+rval+`/NEMN_styleGuide.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/NEMN_mockup_BC_full.png" data-lightbox="`+rval+`3" data-title=""><img src="/img/desn/`+rval+`/NEMN_mockup_BC_full.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/NEMN_mockup_postcard_full.png" data-lightbox="`+rval+`4" data-title=""><img src="/img/desn/`+rval+`/NEMN_mockup_postcard_full.png" alt=""></a>
-        <a href="/img/desn/`+rval+`/NEMN_production.png" data-lightbox="`+rval+`5" data-title=""><img src="/img/desn/`+rval+`/NEMN_production.png" alt=""></a>
+        <a href="/img/desn/`+rval+`/NEMN_concept_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/desn/`+rval+`/NEMN_concept_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/NEMN_logo_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/desn/`+rval+`/NEMN_logo_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/NEMN_styleGuide_full.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/desn/`+rval+`/NEMN_styleGuide_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/NEMN_mockup_BC_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/desn/`+rval+`/NEMN_mockup_BC_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/NEMN_mockup_postcard_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/desn/`+rval+`/NEMN_mockup_postcard_full.jpg" alt=""></a>
+        <a href="/img/desn/`+rval+`/NEMN_production_full.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/desn/`+rval+`/NEMN_production_full.jpg" alt=""></a>
         </section>
         `
         );
@@ -494,7 +494,6 @@ $("#rabn").click(function(){
     <a href="/img/ills/`+rval+`/RABN_8_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/RABN_8_full.jpg" alt=""></a>
     <a href="/img/ills/`+rval+`/RABN_10_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/RABN_10_full.jpg" alt=""></a>
     <a href="/img/ills/`+rval+`/RABN_11_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/RABN_11_full.jpg" alt=""></a>
-    <a href="/img/ills/`+rval+`/RABN_12_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/RABN_12_full.jpg" alt=""></a>
     </section>`
     );
     $(".project").slick({
