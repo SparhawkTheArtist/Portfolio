@@ -99,21 +99,21 @@ function glryIlls(rndm){
         <p>After many more hours of concept sketching and design, I had completed the card deck. Along the way, I learned a lot about illustration and design.</p>
         </section>
         <section id="`+rval+`Project" class="projectNav">
-        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_aSpades_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_3Spades_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_5Spades_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_aspades_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_3spades_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_5spades_thumb.jpg" alt=""></div>
         <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_kClubs_thumb.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_mockup_v02_thumb.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_mockup_vV2_thumb.jpg" alt=""></div>
         <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_poster_series1_thumb.jpg" alt=""></div>
         <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_poster_series2_thumb.jpg" alt=""></div>
         <div class="navContainer"><img src="/img/ills/`+rval+`/BSRY_all_thumb.jpg" alt=""></div>
         </section>
         <section class=" bsry project">
-        <a href="/img/ills/`+rval+`/BSRY_aSpades_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/ills/`+rval+`/BSRY_aSpades_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/BSRY_3Spades_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/BSRY_3Spades_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/BSRY_5Spades_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/ills/`+rval+`/BSRY_5Spades_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/BSRY_aspades_full.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/ills/`+rval+`/BSRY_aspades_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/BSRY_3spades_full.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/ills/`+rval+`/BSRY_3spades_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/BSRY_5spades_full.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/ills/`+rval+`/BSRY_5spades_full.jpg" alt=""></a>
         <a href="/img/ills/`+rval+`/BSRY_kClubs_full.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/ills/`+rval+`/BSRY_kClubs_full.jpg" alt=""></a>
-        <a href="/img/ills/`+rval+`/BSRY_mockup_v02_full.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/ills/`+rval+`/BSRY_mockup_v02_full.jpg" alt=""></a>
+        <a href="/img/ills/`+rval+`/BSRY_mockup_V02_full.jpg" data-lightbox="`+rval+`5" data-title=""><img src="/img/ills/`+rval+`/BSRY_mockup_vV2_full.jpg" alt=""></a>
         <a href="/img/ills/`+rval+`/BSRY_poster_series1_full.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/ills/`+rval+`/BSRY_poster_series1_full.jpg" alt=""></a>
         <a href="/img/ills/`+rval+`/BSRY_poster_series2_full.jpg" data-lightbox="`+rval+`7" data-title=""><img src="/img/ills/`+rval+`/BSRY_poster_series2_full.jpg" alt=""></a>
         <a href="/img/ills/`+rval+`/BSRY_all_full.jpg" data-lightbox="`+rval+`8" data-title=""><img src="/img/ills/`+rval+`/BSRY_all_full.jpg" alt=""></a>
