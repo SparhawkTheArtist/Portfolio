@@ -55,6 +55,7 @@ function slickMe(){
         waitForAnimate: false,
         asNavFor: '.projectNav',
         autoPlaySpeed: 2000,
+        lazyLoad: 'ondemand',
         fade: true,
         speed: 1000,
     });
@@ -66,6 +67,7 @@ function slickMe(){
         initialSlide: 0,
         autoplay: true,
         dots: true,
+        lazyLoad: 'ondemand',
         pauseOnHover: true,
         pauseOnFocus: true,
         centerMode: true,
