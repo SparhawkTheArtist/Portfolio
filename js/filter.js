@@ -360,24 +360,24 @@ function glryFoto(rndm){
         rval = 'bird'
         $('.gallery').append(`
         <section id="`+rval+`Project" class="projectNav">
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC5505.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC5568.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC6369.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC7597.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC6803.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC9918.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC7440.jpg" alt=""></div>
-        <div class="navContainer"><img src="/img/foto/`+rval+`/_DSC9810.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC5505.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC5568.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC6369.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC7597.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC6803.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC9918.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC7440.jpg" alt=""></div>
+        <div class="navContainer"><img src="/img/foto/`+rval+`/DSC9810.jpg" alt=""></div>
         </section>
         <section class=" `+rval+` project">
-        <a href="/img/foto/`+rval+`/_DSC5505.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/foto/`+rval+`/_DSC5505.jpg" alt=""></a>
-        <a href="/img/foto/`+rval+`/_DSC5568.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/foto/`+rval+`/_DSC5568.jpg" alt=""></a>
-        <a href="/img/foto/`+rval+`/_DSC6369.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/foto/`+rval+`/_DSC6369.jpg" alt=""></a>
-        <a href="/img/foto/`+rval+`/_DSC7597.jpg" data-lightbox="`+rval+`7" data-title=""><img src="/img/foto/`+rval+`/_DSC7597.jpg" alt=""></a>
-        <a href="/img/foto/`+rval+`/_DSC6803.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/foto/`+rval+`/_DSC6803.jpg" alt=""></a>
-        <a href="/img/foto/`+rval+`/_DSC9918.jpg" data-lightbox="`+rval+`9" data-title=""><img src="/img/foto/`+rval+`/_DSC9918.jpg" alt=""></a>
-        <a href="/img/foto/`+rval+`/_DSC7440.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/foto/`+rval+`/_DSC7440.jpg" alt=""></a>
-        <a href="/img/foto/`+rval+`/_DSC9810.jpg" data-lightbox="`+rval+`8" data-title=""><img src="/img/foto/`+rval+`/_DSC9810.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC5505.jpg" data-lightbox="`+rval+`1" data-title=""><img src="/img/foto/`+rval+`/DSC5505.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC5568.jpg" data-lightbox="`+rval+`2" data-title=""><img src="/img/foto/`+rval+`/DSC5568.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC6369.jpg" data-lightbox="`+rval+`3" data-title=""><img src="/img/foto/`+rval+`/DSC6369.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC7597.jpg" data-lightbox="`+rval+`7" data-title=""><img src="/img/foto/`+rval+`/DSC7597.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC6803.jpg" data-lightbox="`+rval+`4" data-title=""><img src="/img/foto/`+rval+`/DSC6803.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC9918.jpg" data-lightbox="`+rval+`9" data-title=""><img src="/img/foto/`+rval+`/DSC9918.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC7440.jpg" data-lightbox="`+rval+`6" data-title=""><img src="/img/foto/`+rval+`/DSC7440.jpg" alt=""></a>
+        <a href="/img/foto/`+rval+`/DSC9810.jpg" data-lightbox="`+rval+`8" data-title=""><img src="/img/foto/`+rval+`/DSC9810.jpg" alt=""></a>
         </section>
         `
         );
