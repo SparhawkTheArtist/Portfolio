@@ -8,23 +8,23 @@ navDisplay()
 
 
 // highlight active page in nav
-function activePage(){
-    if ($('#pageTitle').text() == ('Story')){
+function activePage() {
+    if ($('#pageTitle').text() == ('Story')) {
         $('.nav5').addClass('activePage');
     }
-    else if ($('#pageTitle').text() == ('Design')){
+    else if ($('#pageTitle').text() == ('Design')) {
         $('.nav1').addClass('activePage');
     }
-    else if ($('#pageTitle').text() == ('Motion Design')){
+    else if ($('#pageTitle').text() == ('Motion Design')) {
         $('.nav3').addClass('activePage');
     }
-    else if ($('#pageTitle').text() == ('Illustration')){
+    else if ($('#pageTitle').text() == ('Illustration')) {
         $('.nav2').addClass('activePage');
     }
-    else if ($('#pageTitle').text() == ('Photography')){
+    else if ($('#pageTitle').text() == ('Photography')) {
         $('.nav4').addClass('activePage');
     }
-    else if ($('#pageTitle').text() == ('Get in Contact')){
+    else if ($('#pageTitle').text() == ('Get in Contact')) {
         $('.nav6').addClass('activePage');
     };
 }
@@ -33,8 +33,8 @@ function activePage(){
 // display nav 
 function navDisplay() {
     // display nav in mobile
-    if (mediaQuery['matches'] == true){
-        $(function(){
+    if (mediaQuery['matches'] == true) {
+        $(function () {
             $("#nav-placeholder").empty();
 
             $("#nav-placeholder").append(`<aside class="mobileNav">
@@ -62,44 +62,44 @@ function navDisplay() {
             );
             activePage()
         });
-        $(function(){
+        $(function () {
             $('main').prepend('<a href="#" id="menu" class="navButton">Menu</a>')
         });
 
 
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-          var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.querySelector("#menu").style.top = "0";
-          } else {
-            document.querySelector("#menu").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.querySelector("#menu").style.top = "0";
+            } else {
+                document.querySelector("#menu").style.top = "-50px";
+            }
+            prevScrollpos = currentScrollPos;
         }
-        
+
 
         // back to top button fade in
-function backToTop(){
-    if (window.scrollY < 300){
-        document.querySelector('#toTop').style.bottom = '-100%';
-    }
-    else {
-        document.querySelector('#toTop').style.bottom = '0';
+        function backToTop() {
+            if (window.scrollY < 300) {
+                document.querySelector('#toTop').style.bottom = '-100%';
+            }
+            else {
+                document.querySelector('#toTop').style.bottom = '0';
+            };
+        };
+        window.onload = backToTop
+        window.addEventListener('scroll', backToTop);
+        $('.filters a').addClass('mobile')
     };
-};
-window.onload = backToTop
-window.addEventListener('scroll', backToTop);
-$('.filters a').addClass('mobile')
-};
 
-    
 
-// display nav in web
-if (mediaQuery['matches'] == false){
-    $(function(){
-        $("#nav-placeholder").empty();
-        $("#nav-placeholder").append(`<aside id="webNav"> 
+
+    // display nav in web
+    if (mediaQuery['matches'] == false) {
+        $(function () {
+            $("#nav-placeholder").empty();
+            $("#nav-placeholder").append(`<aside id="webNav"> 
             <img src="/img/Spar_logo_black.png" alt="Sparhawk Logo">
             <nav>
             <ul>
@@ -128,7 +128,7 @@ if (mediaQuery['matches'] == false){
 
 
 // open menu on mobile nav
-$('main').on('click', '.navButton', function(){
+$('main').on('click', '.navButton', function () {
     $('.mobileNav').toggleClass('showMenu');
     $('body').toggleClass('fixed')
     console.log('green')
@@ -151,8 +151,9 @@ lightbox.option({
 
 // copy email on click
 new ClipboardJS('.btn');
-if (document.querySelector('#pageTitle').textContent == "Get in Contact"){
-document.querySelector('.btn').addEventListener('click', () =>{
-    alert("'sparhawktheartist@gmail.com' copied to clipboard")
-})}
+if (document.querySelector('#pageTitle').textContent == "Get in Contact") {
+    document.querySelector('.btn').addEventListener('click', () => {
+        alert("'sparhawktheartist@gmail.com' copied to clipboard")
+    })
+}
 
